@@ -19,6 +19,8 @@ To run unittests:
 `python -m coverage run -m unittest discover -v -s ./tests -p "*test*.py" `
 To get a website of what the code coverage looks like/where it can be improved:
 `python -m coverage html`
+To verify integration suite is passing check the following link:
+[GitHub Actions](https://github.com/zacmccul/romanian-rummy/actions)
 
 ## Roadmap
 
