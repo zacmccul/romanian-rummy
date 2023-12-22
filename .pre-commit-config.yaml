@@ -15,5 +15,23 @@ repos:
         # Run the linter.
     - id: ruff
       args: [ --fix ]
-        # Run the formatter.
+      # Run the formatter.
     - id: ruff-format
+# -   repo: local
+#     hooks:
+#     - id: unittest-check
+#       name: unittest-check
+#       entry: python -m coverage run -m unittest discover
+#       args: ["-v", "-s", "./tests", "-p", "*test*.py"]
+#       pass_filenames: false
+#       language: system
+#       'types': [python]
+#       stages: [commit]
+#     - id: unittest-coverage
+#       name: unittest-coverage
+#       entry: python -m coverage report --fail-under=70
+#       pass_filenames: false
+#       #additional_dependencies: [coverage]
+#       language: system
+#       #language: system
+#       stages: [commit]
