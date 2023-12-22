@@ -28,7 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         # pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Pre commit 
+    - name: Pre commit
       run: |
         export PYTHONPATH=$PYTHONPATH:./src:./tests
         pre-commit run --all-files
