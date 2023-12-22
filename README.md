@@ -7,12 +7,18 @@ tbd
 2. git clone https://github.com/zacmccul/unknown.git in VS Code
 3. `python -m venv .venv`
 4. `.venv/Scripts/activate` depending on the system may need .bat, .ps1, or just activate.
-5. Copy `rummi.pth` to `.venv/Lib/site-packages` and replace `YOUR_USER_PATH/tests` with the ABSOLUTE (e.g. C:\\Users etc.) paths to tests and src. This is to make python unit test for pre-commit work correctly.
+5. (Likely not needed anymore) Copy `rummi.pth` to `.venv/Lib/site-packages` and replace `YOUR_USER_PATH/tests` with the ABSOLUTE (e.g. C:\\Users etc.) paths to tests and src. This is to make python unit test for pre-commit work correctly.
 6. `pip install -r requirements.txt`
 7. `pre-commit install`  (prefix with python -m if pre-commit isn't found)
 8. `pre-commit run --all-files`
 9. Set up VS Code Test Cases (unittest, tests/ directory, \*test\*.py option)
 
+
+## Usage Instructions
+To run unittests:
+`python -m coverage run -m unittest discover -v -s ./tests -p "*test*.py" `
+To get a website of what the code coverage looks like/where it can be improved:
+`python -m coverage html`
 
 ## Roadmap
 
