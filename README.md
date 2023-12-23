@@ -1,4 +1,5 @@
-tbd
+# Rules:
+https://www.pagat.com/rummy/romtile.html
 
 ## Installation Instructions
 1. [Install VS Code & Python](https://code.visualstudio.com/docs/python/python-tutorial)
